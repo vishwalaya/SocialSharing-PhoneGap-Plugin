@@ -309,7 +309,7 @@ public class SocialSharing extends CordovaPlugin {
         // add the URL to the message, as there seems to be no separate field
         if (notEmpty(url)) {
           if (notEmpty(message)) {
-            message += " " + url;
+            message += "" + url;
           } else {
             message = url;
           }
@@ -580,7 +580,7 @@ public class SocialSharing extends CordovaPlugin {
     // add the URL to the message, as there seems to be no separate field
     if (notEmpty(url)) {
       if (notEmpty(message)) {
-        message += " " + url;
+        message += "" + url;
       } else {
         message = url;
       }
